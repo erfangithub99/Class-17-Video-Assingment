@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.mid-content{
+    max-width: 1100px;
+    margin: auto;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Begin CSS  */
+.header-section {
+    background-color: #fff;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+}
+.header-logo{
+    width: 30%;
+}
+.header-menu{
+    width: 56%;
+}
+.header-button{
+    width: 14%;
+}
+.primary-menu{}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.primary-menu ul li a {
+    display: block;
+    padding: 0 19px;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.primary-menu ul li a:hover{}
+.header-section a{
+    color: #010101;
+}
+.header-logo{}
+.logo-main{}
+
+.logo-main  img {
+    height: 51px;
+    float: left;
+    margin-right: 12px;
+}
+.logo-main span{
+    display: inline-block;
+    margin-top: 11px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.header-button{
+    text-align: right;
+}
+.header-button .header-btn {
+    border: 2px solid #6278df;
+    display: inline-block;
+    margin-top: 3px;
+    font-weight: 600;
+    padding: 10px 21px;
+    font-size: 16px;
+    /* text-align: right; */
+    border-radius: 10px;
+    color: #6278df;
+    transition: .2s;
+}
+.header-button .header-btn:hover {
+    background: #6278df;
+    color: #fff;
+    box-shadow: 3px 3px 15px -3px #6278df;
+}
+/* Dropdown menu  */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 297px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 10;
+}
+.primary-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.primary-menu ul li ul li{}
+.primary-menu ul li ul li a{}
+
+/* bannar Section  */
+.bannar-section {
+    background-image: url(./img/bannar.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 120px 0;
+    color: #fff;
+    position: relative;
+    top: 63px;
+    z-index: 9;
+}
+.bannar-section::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0 0 0 / 38%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.bannar-section .bannar-content{}
+.bannar-content h3{
+    font-size: 20px;
+}
+.bannar-content h2 {
+    font-size: 55px;
+    margin: 24px 0;
+}
+.bannar-content .defult-btn{
+    color: #7d7d7d;
+    padding: 19px 26px;
+    background: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 5px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: .2s;
+}
+.bannar-content .defult-btn:hover{
+    background: #6278DF;
+    color: #fff;
+}
+
+/* Bottom border  */
+.bannar-bottom{
+    padding: 100px 0;
+    background-color: #F7F9FF;
+}
+.bannar-bottom .videoleft{
+    width: 48%;
+}
+.bannar-bottom .video-content-right{
+    width: 48%;
+}
+.bannar-bottom .video-content-right h3 {
+    font-weight: 400;
+    font-size: 43px;
+    margin-bottom: 30px;
+}
+.bannar-bottom .video-content-right p {
+    color: #767676;
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+/* Service section  */
+.service-section{
+    background-color: #fff;
+    padding: 63px 0;
+}
+.section-title{}
+.section-title h1{
+    font-size: 49px;
+    margin-bottom: 30px;
+}
+.section-title p{
+    color: #767676 !important;
+    font-size: 20px;
+}
+
+/* service iteem  */
+.services-item{
+    margin-top: 70px;
+}
+.service-box{
+    width: 31.3%;
+    margin-bottom: 35px;
+    box-shadow: 4px 4px 8px 0 #00000087;
+    margin-right: 2%;
+    box-sizing: border-box;
+    padding: 26px;
+}
+.service-box .s-icon {
+    width: 63px;
+    color: #6278df;
+    float: left;
+    font-size: 36px;
+    height: 110px;
+}
+.service-box .s-icon span{}
+.service-box .s-content{}
+.service-box .s-content h3{font-weight: 600;margin-bottom: 22px;}
+.service-box .s-content p{
+    line-height: 1.5em;
+    color: #767676;
+    font-size: 18px;
+}
